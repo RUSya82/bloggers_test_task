@@ -1,0 +1,100 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Regular.woff2') format('woff2'),
+  url('../fonts/Poppins-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Medium.woff2') format('woff2'),
+  url('../fonts/Poppins-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-SemiBold.woff2') format('woff2'),
+  url('../fonts/Poppins-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+/*ОБНУЛЕНИЕ СТИЛЕЙ*/
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+li{
+  list-style-type: none;
+}
+a, a:visited{
+  text-decoration: none;
+  color: inherit ;
+}
+a:hover{
+  text-decoration: none;
+  color: inherit ;
+}
+h1,h2,h3,h4,h5,h6{
+  font-size: inherit;
+  font-weight: inherit;
+}
+img{
+  vertical-align: top;
+}
+/*СТИЛИ ПРОЕКТА*/
+body{
+  font-size: 16px;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  background: #E5E5E5;
+  color: #606F81;
+}
+html, body{
+  height: 100%;
+}
+.wrapper{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: url("../img/back-image.png") 100% 22% no-repeat,
+  url("../img/back-image-down.png") 0 93% no-repeat;
+}
+._container{
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+main{
+  flex: 1 1 auto;
+}
+/***************************************/
+
+[class*="__container"]{
+  max-width: 1280px;
+  margin: 0 auto;
+}
+@media (max-width: 1024px){
+  .wrapper{
+    background: url("../img/back-image.png") 100% 22% no-repeat
+  }
+}
+@media (max-width: 580px){
+  .posts__image{
+    display: none;
+  }
+}
