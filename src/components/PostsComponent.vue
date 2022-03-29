@@ -56,6 +56,9 @@ export default {
     }
     &__image{
       padding: 0 34px 0 0;
+      @media (max-width: 580px){
+        display: none;
+      }
     }
     &__content{
       flex: 0 1 960px;

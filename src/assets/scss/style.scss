@@ -24,8 +24,6 @@
   font-style: italic;
   font-display: swap;
 }
-
-
 /*ОБНУЛЕНИЕ СТИЛЕЙ*/
 *,
 *::before,
@@ -73,6 +71,9 @@ html, body{
   overflow: hidden;
   background: url("../img/back-image.png") 100% 22% no-repeat,
   url("../img/back-image-down.png") 0 93% no-repeat;
+  @media (max-width: 1024px){
+    background: url("../img/back-image.png") 100% 22% no-repeat
+  }
 }
 ._container{
   max-width: 1280px;
@@ -87,14 +88,4 @@ main{
 [class*="__container"]{
   max-width: 1280px;
   margin: 0 auto;
-}
-@media (max-width: 1024px){
-  .wrapper{
-    background: url("../img/back-image.png") 100% 22% no-repeat
-  }
-}
-@media (max-width: 580px){
-  .posts__image{
-    display: none;
-  }
 }

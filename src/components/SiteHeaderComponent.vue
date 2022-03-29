@@ -13,21 +13,16 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
   .site-header{
     font-weight: 600;
     font-size: 48px;
     color: #384758;
     line-height: 1.2;
-  }
-  @media (max-width: 768px) {
-    .site-header{
+    @media (max-width: 768px){
       font-size: 36px;
     }
-
-  }
-  @media (max-width: 580px){
-    .site-header{
+    @media (max-width: 580px){
       font-size: 25px;
     }
   }

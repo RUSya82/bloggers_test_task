@@ -27,20 +27,18 @@ export default {
      line-height: 1.16666;
      color: #384758;
      margin-bottom: 7px;
+    @media (max-width: 580px){
+      font-size: 20px;
+    }
    }
   &__content{
     font-weight: 400;
     font-size: 20px;
     line-height: 1.4;
     color: #606F81;
-  }
-}
-@media (max-width: 580px){
-  .item-post__header{
-    font-size: 20px;
-  }
-  .item-post__content{
-    font-size: 16px;
+    @media (max-width: 580px){
+      font-size: 16px;
+    }
   }
 }
 </style>
